@@ -1,0 +1,179 @@
+$box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(01 0 0 / 19%);
+$main-color:#009688;
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #f1f1f1;
+}
+i{
+    margin-right: 10px;
+    color: $main-color;
+}
+// the main container of the content
+.container{
+    width: 98%;
+    margin: 20px auto;
+    // main row
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        // the left side of the page
+        .col-left{
+            width: 31%;
+            box-shadow: $box-shadow;
+            .profile-img{
+                width: 100%;
+                height: 300px;
+                background: url('../img/avatar_hat.jpg')center center no-repeat;
+                background-size: cover;
+                position: relative;
+                h2{
+                    position: absolute;
+                    left: 20px;
+                    bottom: 20px;
+                    font-weight: lighter;
+                    font-size: 35px;
+                }
+            }
+            .inner-container{
+                padding: 20px;
+                .contact-info{
+                    padding-bottom: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    color: gray;
+                    
+                }
+                // skills
+                .skills{
+                    padding-top: 20px;
+                    color: gray;
+                    font-size: 22px;
+                    label{
+                        display: block;
+                        margin-top: 20px;
+                        font-size: 16px;
+                    }
+                    .progress{
+                        border-radius: 10px;
+                        background-color: #f1f1f1;
+                        font-size: 14px;
+                        padding: 1px 0;
+                        margin-top: 5px;
+                        .progress-bar{
+                            border-radius: 10px;
+                            background-color: $main-color;
+                            color: whitesmoke;
+                            text-align: center;
+                        }
+                    }
+                }
+                // languages
+                .languages{
+                    padding-top: 40px;
+                    color: gray;
+                    font-size: 22px;
+                    label{
+                        display: block;
+                        margin-top: 20px;
+                        font-size: 16px;
+                    }
+                    .progress{
+                        border-radius: 10px;
+                        background-color: #f1f1f1;
+                        font-size: 14px;
+                        padding: 1px 0;
+                        margin-top: 5px;
+                        .progress-bar{
+                            padding: 10px 0;
+                            border-radius: 10px;
+                            background-color: $main-color;
+                        }
+                    }
+                }
+            }
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
+        // the right side of the page
+        .col-right{
+            width: 67%;
+            .work-experience, .education{
+                background-color: white;
+                box-shadow: $box-shadow;
+                padding: 25px;
+                color: gray;
+                h2{
+                    font-size: 30px;
+                    font-weight: lighter;
+                    margin-bottom: 40px;
+                    i{
+                        font-size: 35px;
+                    }
+                }
+                .companies, .schools{
+                    padding: 0 5px;
+                    .company, .school{
+                        h3{
+                            font-weight: 500;
+                            margin-bottom: 25px;
+                        }
+                        .calender{
+                            color: $main-color;
+                            .badg{
+                                padding: 5px;
+                                border-radius: 5px;
+                                background-color: $main-color;
+                                color: white;
+                            }
+                        }
+                        .text{
+                            margin: 20px 0;
+                            line-height: 1.3;
+                            color: #111;
+                            font-size: 15px;
+                        }
+                    }
+                    hr{
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+            .education{
+                margin-top: 20px;
+            }
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}
+// footer
+footer{
+    background-color: #009688;
+    color: whitesmoke;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .social{
+        display: flex;
+        margin: 5px 0;
+        i{
+            margin: 3px;
+            color: whitesmoke;
+        }
+    }
+}

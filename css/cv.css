@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+i {
+  margin-right: 10px;
+  color: #009688;
+}
+
+.container {
+  width: 98%;
+  margin: 20px auto;
+}
+.container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.container .row .col-left {
+  width: 31%;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(1, 0, 0, 0.19);
+}
+.container .row .col-left .profile-img {
+  width: 100%;
+  height: 300px;
+  background: url("../img/avatar_hat.jpg") center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.container .row .col-left .profile-img h2 {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-weight: lighter;
+  font-size: 35px;
+}
+.container .row .col-left .inner-container {
+  padding: 20px;
+}
+.container .row .col-left .inner-container .contact-info {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: gray;
+}
+.container .row .col-left .inner-container .skills {
+  padding-top: 20px;
+  color: gray;
+  font-size: 22px;
+}
+.container .row .col-left .inner-container .skills label {
+  display: block;
+  margin-top: 20px;
+  font-size: 16px;
+}
+.container .row .col-left .inner-container .skills .progress {
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  font-size: 14px;
+  padding: 1px 0;
+  margin-top: 5px;
+}
+.container .row .col-left .inner-container .skills .progress .progress-bar {
+  border-radius: 10px;
+  background-color: #009688;
+  color: whitesmoke;
+  text-align: center;
+}
+.container .row .col-left .inner-container .languages {
+  padding-top: 40px;
+  color: gray;
+  font-size: 22px;
+}
+.container .row .col-left .inner-container .languages label {
+  display: block;
+  margin-top: 20px;
+  font-size: 16px;
+}
+.container .row .col-left .inner-container .languages .progress {
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  font-size: 14px;
+  padding: 1px 0;
+  margin-top: 5px;
+}
+.container .row .col-left .inner-container .languages .progress .progress-bar {
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: #009688;
+}
+@media screen and (max-width: 768px) {
+  .container .row .col-left {
+    width: 100%;
+  }
+}
+.container .row .col-right {
+  width: 67%;
+}
+.container .row .col-right .work-experience, .container .row .col-right .education {
+  background-color: white;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(1, 0, 0, 0.19);
+  padding: 25px;
+  color: gray;
+}
+.container .row .col-right .work-experience h2, .container .row .col-right .education h2 {
+  font-size: 30px;
+  font-weight: lighter;
+  margin-bottom: 40px;
+}
+.container .row .col-right .work-experience h2 i, .container .row .col-right .education h2 i {
+  font-size: 35px;
+}
+.container .row .col-right .work-experience .companies, .container .row .col-right .work-experience .schools, .container .row .col-right .education .companies, .container .row .col-right .education .schools {
+  padding: 0 5px;
+}
+.container .row .col-right .work-experience .companies .company h3, .container .row .col-right .work-experience .companies .school h3, .container .row .col-right .work-experience .schools .company h3, .container .row .col-right .work-experience .schools .school h3, .container .row .col-right .education .companies .company h3, .container .row .col-right .education .companies .school h3, .container .row .col-right .education .schools .company h3, .container .row .col-right .education .schools .school h3 {
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+.container .row .col-right .work-experience .companies .company .calender, .container .row .col-right .work-experience .companies .school .calender, .container .row .col-right .work-experience .schools .company .calender, .container .row .col-right .work-experience .schools .school .calender, .container .row .col-right .education .companies .company .calender, .container .row .col-right .education .companies .school .calender, .container .row .col-right .education .schools .company .calender, .container .row .col-right .education .schools .school .calender {
+  color: #009688;
+}
+.container .row .col-right .work-experience .companies .company .calender .badg, .container .row .col-right .work-experience .companies .school .calender .badg, .container .row .col-right .work-experience .schools .company .calender .badg, .container .row .col-right .work-experience .schools .school .calender .badg, .container .row .col-right .education .companies .company .calender .badg, .container .row .col-right .education .companies .school .calender .badg, .container .row .col-right .education .schools .company .calender .badg, .container .row .col-right .education .schools .school .calender .badg {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #009688;
+  color: white;
+}
+.container .row .col-right .work-experience .companies .company .text, .container .row .col-right .work-experience .companies .school .text, .container .row .col-right .work-experience .schools .company .text, .container .row .col-right .work-experience .schools .school .text, .container .row .col-right .education .companies .company .text, .container .row .col-right .education .companies .school .text, .container .row .col-right .education .schools .company .text, .container .row .col-right .education .schools .school .text {
+  margin: 20px 0;
+  line-height: 1.3;
+  color: #111;
+  font-size: 15px;
+}
+.container .row .col-right .work-experience .companies hr, .container .row .col-right .work-experience .schools hr, .container .row .col-right .education .companies hr, .container .row .col-right .education .schools hr {
+  margin-bottom: 25px;
+}
+.container .row .col-right .education {
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .container .row .col-right {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+footer {
+  background-color: #009688;
+  color: whitesmoke;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .social {
+  display: flex;
+  margin: 5px 0;
+}
+footer .social i {
+  margin: 3px;
+  color: whitesmoke;
+}/*# sourceMappingURL=cv.css.map */
